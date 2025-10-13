@@ -23,4 +23,23 @@ public class VehicleController {
     public ResponseEntity<Integer> addVehicle(@RequestBody @Valid VehicleRequest vehicleRequest){
         return ResponseEntity.ok(service.createVehicle(vehicleRequest));
     }
+
+    @GetMapping("/{vehicle-id}")
+    public ResponseEntity<Vehicle> findVehicleById(@PathVariable("vehicle-id") Integer id){
+
+        return ResponseEntity.ok(service.findVehicleById(id));
+    }
+
+   @PutMapping("/{vehicle-id}")
+   public ResponseEntity<Vehicle> updateVehicle(@PathVariable("vehicle-id") Integer id, @RequestBody VehicleRequest vehicleRequest){
+
+        return ResponseEntity.ok(service.updateVehicle(id,vehicleRequest));
+   }
+
+
+    @DeleteMapping("/{vehicle-id}")
+    public ResponseEntity<Void> deleteVehicle(@PathVariable("vehicle-id") Integer id){
+          service.deleteVehicle(id);
+          return ResponseEntity.accepted().build();
+    }
 }
