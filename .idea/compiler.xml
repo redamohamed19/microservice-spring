@@ -12,6 +12,12 @@
         </processorPath>
         <module name="vehicule" />
       </profile>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="config-server" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="booking" target="17" />
@@ -20,6 +26,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="booking" options="-parameters" />
+      <module name="config-server" options="-parameters" />
       <module name="vehicule" options="-parameters" />
     </option>
   </component>

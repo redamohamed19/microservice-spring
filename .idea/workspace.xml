@@ -4,23 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6dadfb2d-ed6f-46d3-9111-d740770b22a9" name="Changes" comment="feat: add postgress config &amp; vehicule">
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicule/src/main/java/com/booking/vehicule/handler/ErrorResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicule/src/main/java/com/booking/vehicule/handler/GlobalExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicule/src/main/java/com/booking/vehicule/vehicle/Vehicle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicule/src/main/java/com/booking/vehicule/vehicle/VehicleController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicule/src/main/java/com/booking/vehicule/vehicle/VehicleMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicule/src/main/java/com/booking/vehicule/vehicle/VehicleModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicule/src/main/java/com/booking/vehicule/vehicle/VehicleRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicule/src/main/java/com/booking/vehicule/vehicle/VehicleRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicule/src/main/java/com/booking/vehicule/vehicle/VehicleService.java" afterDir="false" />
+    <list default="true" id="6dadfb2d-ed6f-46d3-9111-d740770b22a9" name="Changes" comment="feat: add Vehicle microservice">
+      <change afterPath="$PROJECT_DIR$/config-server/src/main/resources/configurations/vehicle-service.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vehicule/src/main/java/com/booking/vehicule/vehicle/VehicleResponse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vehicule/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vehicule/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicule/src/main/java/com/booking/vehicule/VehiculeApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/vehicule/src/main/java/com/booking/vehicule/VehicleApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicule/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/vehicule/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicule/src/test/java/com/booking/vehicule/VehiculeApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/vehicule/src/test/java/com/booking/vehicule/VehicleApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vehicule/src/main/java/com/booking/vehicule/handler/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/vehicule/src/main/java/com/booking/vehicule/handler/GlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vehicule/src/main/java/com/booking/vehicule/vehicle/VehicleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/vehicule/src/main/java/com/booking/vehicule/vehicle/VehicleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vehicule/src/main/java/com/booking/vehicule/vehicle/VehicleRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/vehicule/src/main/java/com/booking/vehicule/vehicle/VehicleRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vehicule/src/main/java/com/booking/vehicule/vehicle/VehicleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/vehicule/src/main/java/com/booking/vehicule/vehicle/VehicleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vehicule/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vehicule/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +42,9 @@
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
 }</component>
@@ -54,22 +53,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.BookingApplication.executor": "Run",
-    "Application.VehicleApplication.executor": "Run",
-    "Application.VehiculeApplication.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "/home/sayah-reda/eclipse-workspace/booking"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.BookingApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ConfigServerApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.VehicleApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.VehiculeApplication.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/sayah-reda/eclipse-workspace/booking/config-server&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.booking.vehicule.vehicle" />
     </key>
   </component>
   <component name="TaskManager">
@@ -88,7 +91,15 @@
       <option name="project" value="LOCAL" />
       <updated>1759838408501</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="feat: add Vehicle microservice">
+      <option name="closed" value="true" />
+      <created>1760213391982</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1760213391982</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -104,6 +115,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat: add postgress config &amp; vehicule" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add postgress config &amp; vehicule" />
+    <MESSAGE value="feat: add Vehicle microservice" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add Vehicle microservice" />
   </component>
 </project>
