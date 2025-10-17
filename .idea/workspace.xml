@@ -4,19 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6dadfb2d-ed6f-46d3-9111-d740770b22a9" name="Changes" comment="feat: add Vehicle microservice">
-      <change afterPath="$PROJECT_DIR$/config-server/src/main/resources/configurations/vehicle-service.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicule/src/main/java/com/booking/vehicule/vehicle/VehicleResponse.java" afterDir="false" />
+    <list default="true" id="6dadfb2d-ed6f-46d3-9111-d740770b22a9" name="Changes" comment="feat: add spring cloud server and client in vehicle service">
+      <change afterPath="$PROJECT_DIR$/config-server/src/main/resources/configurations/order-service.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order/src/main/java/com/booking/order/handlers/ErrorResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order/src/main/java/com/booking/order/handlers/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order/src/main/java/com/booking/order/order/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order/src/main/java/com/booking/order/order/OrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order/src/main/java/com/booking/order/order/OrderMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order/src/main/java/com/booking/order/order/OrderRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order/src/main/java/com/booking/order/order/OrderRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order/src/main/java/com/booking/order/order/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order/src/main/java/com/booking/order/order/OrderStatus.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicule/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vehicule/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicule/src/main/java/com/booking/vehicule/handler/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/vehicule/src/main/java/com/booking/vehicule/handler/GlobalExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicule/src/main/java/com/booking/vehicule/vehicle/VehicleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/vehicule/src/main/java/com/booking/vehicule/vehicle/VehicleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicule/src/main/java/com/booking/vehicule/vehicle/VehicleRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/vehicule/src/main/java/com/booking/vehicule/vehicle/VehicleRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicule/src/main/java/com/booking/vehicule/vehicle/VehicleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/vehicule/src/main/java/com/booking/vehicule/vehicle/VehicleService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicule/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vehicule/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/compose.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,9 +29,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Record" />
         <option value="Enum" />
         <option value="Class" />
-        <option value="Record" />
       </list>
     </option>
   </component>
@@ -57,21 +60,26 @@
   &quot;keyToString&quot;: {
     &quot;Application.BookingApplication.executor&quot;: &quot;Run&quot;,
     &quot;Application.ConfigServerApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.OrderApplication.executor&quot;: &quot;Run&quot;,
     &quot;Application.VehicleApplication.executor&quot;: &quot;Run&quot;,
     &quot;Application.VehiculeApplication.executor&quot;: &quot;Run&quot;,
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/sayah-reda/eclipse-workspace/booking/config-server&quot;
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/sayah-reda/eclipse-workspace/booking/order&quot;
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.booking.order.order" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.booking.order.handlers" />
       <recent name="com.booking.vehicule.vehicle" />
     </key>
   </component>
@@ -99,7 +107,23 @@
       <option name="project" value="LOCAL" />
       <updated>1760213391982</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="feat: add Vehicle update controller">
+      <option name="closed" value="true" />
+      <created>1760363205961</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1760363205961</updated>
+    </task>
+    <task id="LOCAL-00004" summary="feat: add spring cloud server and client in vehicle service">
+      <option name="closed" value="true" />
+      <created>1760363293973</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1760363293973</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -116,6 +140,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat: add postgress config &amp; vehicule" />
     <MESSAGE value="feat: add Vehicle microservice" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add Vehicle microservice" />
+    <MESSAGE value="feat: add Vehicle update controller" />
+    <MESSAGE value="feat: add spring cloud server and client in vehicle service" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add spring cloud server and client in vehicle service" />
   </component>
 </project>
