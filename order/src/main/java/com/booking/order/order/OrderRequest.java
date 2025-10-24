@@ -4,6 +4,8 @@ import jakarta.validation.constraints.NotNull;
 
 public record OrderRequest(
     @NotNull
-    OrderStatus status
+    OrderStatus status,
+    @NotNull
+    Integer vehicle_id
 ) {
 }

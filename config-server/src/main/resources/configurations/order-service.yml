@@ -28,3 +28,6 @@ spring:
 
     # Sets the Hibernate dialect for PostgreSQL to generate proper SQL
     database-platform: org.hibernate.dialect.PostgreSQLDialect
+application:
+  config:
+    vehicle-url: http://localhost:8080/api/v1/vehicles

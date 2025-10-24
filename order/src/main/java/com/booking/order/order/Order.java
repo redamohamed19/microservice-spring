@@ -19,4 +19,6 @@ public class Order {
 
     @Enumerated(EnumType.STRING)
     private OrderStatus status;
+
+    private Integer vehicle_id;
 }
